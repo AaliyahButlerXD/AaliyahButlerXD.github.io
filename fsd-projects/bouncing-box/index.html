@@ -81,11 +81,11 @@
          */
         function update() {
           
-          moveBoxTo(positionX, -30); 
+          moveBoxTo(positionX, 200); 
          
-        changeBoxText(0); 
+        
            positionX = positionX + speed;
-           box.style.left = positionX + "px";
+           
            if (positionX > boardWidth) {
                    speed *= -1;
                  }
@@ -105,6 +105,7 @@
          * - move the box to the left side of the screen.
          */
         function handleBoxClick() {
+          changeBoxText(points); 
           positionX = 0;
            points++;  
           points = points + 1;
